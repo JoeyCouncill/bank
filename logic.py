@@ -32,9 +32,8 @@ class Logic(QMainWindow, Ui_Dialog):
                 for names, passwords in self.login_read().items():
                     if names == name and passwords == password:
                         self.set_name(name)
-                        self.set_password(password)
                         self.pages.setCurrentWidget(self.landing_page)
-                        self.switch_account()
+                        self.sw85itch_account()
                         return
                 raise AccountException
             else:
